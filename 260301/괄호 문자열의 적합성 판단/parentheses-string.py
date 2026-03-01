@@ -6,7 +6,10 @@ for ch in str:
     if ch == '(':
         stack.append('(')
     else:
-        stack.pop()
+        if not stack:
+            print('No')
+        else:
+            stack.pop()
 
 if stack:
     print('No')

@@ -8,6 +8,7 @@ for ch in str:
     else:
         if not stack:
             print('No')
+            break
         else:
             stack.pop()
 

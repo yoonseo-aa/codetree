@@ -1,18 +1,16 @@
-str = input()
+s = input()
 
-# Please write your code here.
 stack = []
-for ch in str:
+for ch in s:
     if ch == '(':
         stack.append('(')
-    else:
-        if not stack:
-            print('No')
+    else: 
+        if not stack:  
+            print("No")
             break
-        else:
-            stack.pop()
-
-if stack:
-    print('No')
+        stack.pop()
 else:
-    print('Yes')
+    if stack:
+        print("No")
+    else:
+        print("Yes")
